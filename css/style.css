@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../images/3.jpg');
+    background-position: center top;/*背景定位：显示居中*/
+}
+#box{
+    position: relative;
+    width: 840px;
+    height: 300px;
+    margin: 200px auto;
+}
+#box .info{
+    float: left;
+    width: 450px;
+    height: 300px;
+}
+.info p{/*空格到子元素*/
+    float: left;
+    width: 200px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+}
+.info p.btn{/*空格是后代元素，紧接着写才是当前元素！！！*/
+    width: 450px;
+    height: 40px;
+    background: #00cc00;
+    margin-left: 0;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.info p span{/*行内元素设置宽高不起作用*/
+    /*display: block;*//*设置为块元素，但是占满一行显示*/
+    /*display: inline-block;*//*行间块级元素，既能设置宽高也能在一行显示，
+                          但是span与input之间有换行，浏览器会解析出空格，因此会有间距*/
+    float: left;/*左浮动,漂浮起来的元素默认的行为不起作用了，并且空格不会浮动
+                   类似于层级变量，关键是也能对其设置宽高了*/
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.info p input{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border: 0;/*清除默认的边框*/
+    background: #000;
+    color: #fff;
+    outline: none;
+    text-indent: 10px;/*文本缩进*/
+}
+#qrcode{
+    float: right;
+    width: 256px;
+    height: 256px;
+    margin-top: 20px;
+    border: 1px solid #333;
+    color: #ccc;
+    text-align: center;
+    line-height: 256px;
+}

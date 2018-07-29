@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电子名片系统</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="box">
+    <div class="info">
+        <p><!--段落标签-->
+            <span>姓名:</span><!--文本标签-->
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <span>公司:</span>
+            <input type="text" id="company" name="company">
+        </p>
+        <p>
+            <span>职务:</span>
+            <input type="text" id="job" name="job">
+        </p>
+        <p>
+            <span>地址:</span>
+            <input type="text" id="address" name="address">
+        </p>
+        <p>
+            <span>手机:</span>
+            <input type="text" id="mobile" name="mobile">
+        </p>
+        <p>
+            <span>邮箱:</span>
+            <input type="text" id="email" name="email">
+        </p>
+        <p>
+            <span>网址:</span>
+            <input type="text" id="web" name="web">
+        </p>
+        <p>
+            <span>备注:</span>
+            <input type="text" id="remark" name="remark">
+        </p>
+        <p class="btn">开启通讯录</p>
+    </div>
+    <div id="qrcode">生成的二维码将在此显示...</div>
+</div>
+<script type="text/javascript" src="js/qrcode.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
